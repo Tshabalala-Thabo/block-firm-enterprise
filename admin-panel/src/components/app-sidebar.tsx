@@ -1,4 +1,4 @@
-import { Calendar, Home, Clipboard, Users, Settings, ArrowLeftRight, Package, ChevronDown, ChevronsUpDown, User, HelpCircle,LogOut } from "lucide-react"
+import { Calendar, Grip, Clipboard, Users, Settings, ArrowLeftRight, Package, ChevronDown, ChevronsUpDown, User, HelpCircle,LogOut } from "lucide-react"
 
 import {
     Sidebar,
@@ -11,7 +11,6 @@ import {
     SidebarMenuItem,
     SidebarMenuSub,
     SidebarMenuSubItem,
-    SidebarFooter
 } from "@/components/ui/sidebar"
 
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@radix-ui/react-collapsible"
@@ -30,7 +29,7 @@ const items = [
     {
         title: "Dashboard",
         url: "#",
-        icon: Home,
+        icon: Grip,
     },
     {
         title: "Customers",
@@ -58,7 +57,6 @@ const items = [
         icon: Settings,
     },
 ]
-
 
 function ProfileDropdown() {
     return (
@@ -103,18 +101,18 @@ function ProfileDropdown() {
 
 export function AppSidebar() {
     return (
-        <Sidebar className="w-60">
+        <Sidebar className="w-56">
             <SidebarContent>
                 <SidebarGroup>
-                    <SidebarGroupLabel className="mb-3 h-auto"><img src="logo.png" className="h-auto w-full" alt="logo" /></SidebarGroupLabel>
+                    <SidebarGroupLabel className="mb-5 mt-2 h-auto"><img src="logo.png" className="h-auto w-full" alt="logo" /></SidebarGroupLabel>
                     <SidebarGroupContent>
                         <SidebarMenu>
                             {items.map((item) => (
                                 <SidebarMenuItem key={item.title}>
                                     <SidebarMenuButton asChild>
-                                        <a href={item.url}>
-                                            <item.icon className="size-6" />
-                                            <span className="text-sm text-base font-medium">{item.title}</span>
+                                        <a href={item.url} className="px-5 py-5">
+                                            <item.icon className="h-6 w-6 scale-150 mr-3" />
+                                            <span className="text-sm text-base">{item.title}</span>
                                         </a>
                                     </SidebarMenuButton>
                                 </SidebarMenuItem>
@@ -122,26 +120,26 @@ export function AppSidebar() {
                             <Collapsible className="group/collapsible">
                                 <SidebarMenuItem>
                                     <CollapsibleTrigger asChild>
-                                        <SidebarMenuButton>
-                                            <Package />
-                                            <span className="text-sm text-base font-medium">Inventory</span>
+                                        <SidebarMenuButton className="px-5">
+                                            <Package className="h-6 w-6 scale-150 mr-3" />
+                                            <span className="text-sm text-base">Inventory</span>
                                             <ChevronDown className="ml-auto" />
                                         </SidebarMenuButton>
                                     </CollapsibleTrigger>
                                     <CollapsibleContent>
                                         <SidebarMenuSub>
                                             <SidebarMenuSubItem>
-                                                <span className="text-sm text-base font-medium">Products</span>
+                                                <span className="text-sm text-base">Products</span>
                                             </SidebarMenuSubItem>
                                         </SidebarMenuSub>
                                         <SidebarMenuSub>
                                             <SidebarMenuSubItem>
-                                                <span className="text-sm text-base font-medium">Gategories</span>
+                                                <span className="text-sm text-base">Gategories</span>
                                             </SidebarMenuSubItem>
                                         </SidebarMenuSub>
                                         <SidebarMenuSub>
                                             <SidebarMenuSubItem>
-                                                <span className="text-sm text-base font-medium">Colors</span>
+                                                <span className="text-sm text-base">Colors</span>
                                             </SidebarMenuSubItem>
                                         </SidebarMenuSub>
                                     </CollapsibleContent>
