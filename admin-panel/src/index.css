@@ -18,24 +18,35 @@ code {
 
 @layer base {
   :root {
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Light Theme */
+    --sidebar-background: 0 0% 98%; /* Light gray background */
+    --sidebar-foreground: 240 5.3% 26.1%; /* Dark gray text */
+    --sidebar-primary: 25 40% 20%; /* Dark brown (primary) */
+    --sidebar-primary-foreground: 0 0% 98%; /* White text */
+    --sidebar-accent: 25 30% 90%; /* Light brown (accent) */
+    --sidebar-accent-foreground: 25 40% 20%; /* Dark brown text */
+    --sidebar-border: 25 20% 85%; /* Light brown border */
+    --sidebar-ring: 25 40% 20%; /* Dark brown ring */
+    --chart-1: 25 40% 20%; /* Dark brown */
+    --chart-2: 25 30% 50%; /* Medium brown */
+    --chart-3: 25 20% 70%; /* Light brown */
+    --chart-4: 142.1 76.2% 36.3%; /* Green (unchanged for contrast) */
   }
+
   .dark {
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Dark Theme */
+    --sidebar-background: 25 40% 10%; /* Very dark brown background */
+    --sidebar-foreground: 25 30% 90%; /* Light brown text */
+    --sidebar-primary: 25 30% 50%; /* Medium brown (primary) */
+    --sidebar-primary-foreground: 0 0% 100%; /* White text */
+    --sidebar-accent: 25 20% 20%; /* Dark brown (accent) */
+    --sidebar-accent-foreground: 25 30% 90%; /* Light brown text */
+    --sidebar-border: 25 20% 20%; /* Dark brown border */
+    --sidebar-ring: 25 30% 50%; /* Medium brown ring */
+    --chart-1: 25 30% 90%; /* Light brown */
+    --chart-2: 25 30% 50%; /* Medium brown */
+    --chart-3: 25 20% 70%; /* Light brown */
+    --chart-4: 142.1 76.2% 36.3%; /* Green (unchanged for contrast) */
   }
 }
 
