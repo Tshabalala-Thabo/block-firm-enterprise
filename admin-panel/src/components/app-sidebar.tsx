@@ -101,7 +101,7 @@ function ProfileDropdown() {
 
 export function AppSidebar() {
     return (
-        <Sidebar className="w-56">
+        <Sidebar>
             <SidebarContent>
                 <SidebarGroup>
                     <SidebarGroupLabel className="mb-5 mt-2 h-auto"><img src="logo.png" className="h-auto w-full" alt="logo" /></SidebarGroupLabel>

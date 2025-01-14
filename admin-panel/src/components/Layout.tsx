@@ -7,7 +7,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <SidebarProvider>
       <AppSidebar />
-      <main className="flex-1 pr-4">
+      <main className="flex-1 px-2 pb-2 bg-[#F5F5F5]">
         <SidebarTrigger />
         {children}
       </main>
