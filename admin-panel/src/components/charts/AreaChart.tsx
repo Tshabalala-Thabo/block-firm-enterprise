@@ -67,14 +67,14 @@ export function Area_Chart() {
             <Area
               dataKey="desktop"
               type="natural"
-              fill="var(--color-desktop)"
-              fillOpacity={0.4}
+              fill="hsl(var(--chart-1))"
+              fillOpacity={0.8}
               stroke="var(--color-desktop)"
             />
           </AreaChart>
         </ChartContainer>
       </CardContent>
-      <CardFooter>
+      {/* <CardFooter>
         <div className="flex w-full items-start gap-2 text-sm">
           <div className="grid gap-2">
             <div className="flex items-center gap-2 font-medium leading-none">
@@ -85,7 +85,7 @@ export function Area_Chart() {
             </div>
           </div>
         </div>
-      </CardFooter>
+      </CardFooter> */}
     </Card>
   )
 }
