@@ -19,8 +19,8 @@ code {
 @layer base {
   :root {
     /* Light Theme */
-    --sidebar-background: 0 0% 98%; /* Light gray background */
-    --sidebar-foreground: 240 5.3% 26.1%; /* Dark gray text */
+    --sidebar-background: 25 40% 20%; /* Dark brown (matches --chart-1) */
+    --sidebar-foreground: 0 0% 98%; /* White text for contrast */
     --sidebar-primary: 25 40% 20%; /* Dark brown (primary) */
     --sidebar-primary-foreground: 0 0% 98%; /* White text */
     --sidebar-accent: 25 30% 90%; /* Light brown (accent) */
@@ -35,7 +35,7 @@ code {
 
   .dark {
     /* Dark Theme */
-    --sidebar-background: 25 40% 10%; /* Very dark brown background */
+    --sidebar-background: 25 40% 10%; /* Even darker brown for dark theme */
     --sidebar-foreground: 25 30% 90%; /* Light brown text */
     --sidebar-primary: 25 30% 50%; /* Medium brown (primary) */
     --sidebar-primary-foreground: 0 0% 100%; /* White text */
