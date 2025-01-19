@@ -104,7 +104,7 @@ export function AppSidebar() {
         <Sidebar>
             <SidebarContent>
                 <SidebarGroup>
-                    <SidebarGroupLabel className="mb-5 mt-2 h-auto"><img src="logo.png" className="h-auto w-full" alt="logo" /></SidebarGroupLabel>
+                    <SidebarGroupLabel className="mb-5 mt-2 h-auto"><img src="logo.png" className="h-auto opacity-90 w-full" alt="logo" /></SidebarGroupLabel>
                     <SidebarGroupContent>
                         <SidebarMenu>
                             {items.map((item) => (

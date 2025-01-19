@@ -1,11 +1,11 @@
 'use client'
 
 import { Bar, BarChart, Line, LineChart } from 'recharts'
-import PrimaryButton from '@/components/charts/Button'
+import PrimaryButton from '@/components/Button'
 import { Area_Chart } from '@/components/charts/AreaChart'
 import { Bar_Chart } from '@/components/charts/BarChart'
+import { Radial_Chart_Shape } from '@/components/charts/RadialChartShape'
 import { Package2, Users, DollarSign, ShoppingCart, TrendingUp, Package, AlertCircle, ArrowUpIcon, ArrowDownIcon } from 'lucide-react'
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { ChartContainer, ChartTooltipContent, ChartTooltip } from '@/components/ui/chart'
 import { Button } from '@/components/ui/button'
@@ -49,7 +49,7 @@ export default function Dashboard() {
       </div>
 
       <Tabs defaultValue="overview" className="space-y-4">
-        <TabsList>
+        <TabsList className='bg-brown-accent'>
           <TabsTrigger value="overview">Overview</TabsTrigger>
           <TabsTrigger value="analytics">Category Analysis</TabsTrigger>
         </TabsList>
@@ -111,7 +111,7 @@ export default function Dashboard() {
           </div>
 
           {/* Charts */}
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-8">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-12">
             {/* <Card className="col-span-4">
               <CardHeader>
                 <CardTitle>Revenue & Orders Overview</CardTitle>
@@ -156,6 +156,9 @@ export default function Dashboard() {
             </div>
             <div className="col-span-4">
               <Bar_Chart/>
+            </div>
+            <div className="col-span-4">
+              <Radial_Chart_Shape/>
             </div>
             {/* Top Products Table */}
 
