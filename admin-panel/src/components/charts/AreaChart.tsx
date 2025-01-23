@@ -35,15 +35,18 @@ const chartConfig = {
 
 export function Area_Chart() {
   return (
-    <Card>
+    <Card className="h-full">
       <CardHeader>
-      <CardTitle>Revenue & Orders Overview</CardTitle>
-      <CardDescription>
-        Monthly revenue and order trends for the current year
+        <CardTitle>Revenue & Orders Overview</CardTitle>
+        <CardDescription>
+          Monthly revenue and order trends for the current year
         </CardDescription>
       </CardHeader>
-      <CardContent>
-        <ChartContainer config={chartConfig}>
+      <CardContent className="h-[calc(100%-110px)]">
+        <ChartContainer
+          config={chartConfig}
+          className="h-full w-full"
+        >
           <AreaChart
             accessibilityLayer
             data={chartData}

@@ -112,52 +112,13 @@ export default function Dashboard() {
 
           {/* Charts */}
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-12">
-            {/* <Card className="col-span-4">
-              <CardHeader>
-                <CardTitle>Revenue & Orders Overview</CardTitle>
-                <CardDescription>
-                  Monthly revenue and order trends for the current year
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ChartContainer
-                  config={{
-                    revenue: {
-                      label: 'Revenue',
-                      color: 'hsl(var(--chart-1))',
-                    },
-                    orders: {
-                      label: 'Orders',
-                      color: 'hsl(var(--chart-2))',
-                    },
-                  }}
-                  className="aspect-[4/3]"
-                >
-                  <LineChart data={revenueData}>
-                    <Line 
-                      type="monotone" 
-                      dataKey="revenue" 
-                      strokeWidth={2} 
-                      activeDot={{ r: 8 }}
-                    />
-                    <Line 
-                      type="monotone" 
-                      dataKey="orders" 
-                      strokeWidth={2} 
-                      activeDot={{ r: 8 }}
-                    />
-                    <ChartTooltip content={<ChartTooltipContent />} />
-                  </LineChart>
-                </ChartContainer>
-              </CardContent>
-            </Card> */}
-            <div className="col-span-4">
+            <div className="col-span-4 h-[400px]">
               <Area_Chart />
             </div>
-            <div className="col-span-4">
+            <div className="col-span-4 h-[400px]">
               <Bar_Chart/>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-4 h-[400px]">
               <Radial_Chart_Shape/>
             </div>
             {/* Top Products Table */}

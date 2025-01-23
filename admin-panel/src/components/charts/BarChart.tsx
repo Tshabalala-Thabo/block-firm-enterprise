@@ -35,15 +35,18 @@ const chartConfig = {
 
 export function Bar_Chart() {
     return (
-        <Card>
+        <Card className="h-full">
             <CardHeader>
                 <CardTitle>Sales by Category</CardTitle>
                 <CardDescription>
                     Distribution of sales across furniture categories
                 </CardDescription>
             </CardHeader>
-            <CardContent>
-                <ChartContainer config={chartConfig}>
+            <CardContent className="h-[calc(100%-110px)]">
+                <ChartContainer
+                    config={chartConfig}
+                    className="h-full w-full"
+                >
                     <BarChart accessibilityLayer data={chartData}>
                         <CartesianGrid vertical={false} />
                         <XAxis
