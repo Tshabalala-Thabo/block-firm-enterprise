@@ -35,7 +35,7 @@ Make sure you have the following installed:
 ### 2️⃣ Installation
 ```sh
 # Clone the repository
-git clone https://github.com/your-username/block-firm-enterprise.git
+git clone https://github.com/Tshabalala-Thabo/block-firm-enterprise.git
 
 # Navigate to the admin panel directory
 cd block-firm-enterprise/admin-panel
