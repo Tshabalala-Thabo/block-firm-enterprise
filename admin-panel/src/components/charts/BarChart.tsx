@@ -55,6 +55,7 @@ export function Bar_Chart() {
                             tickMargin={10}
                             axisLine={false}
                             tickFormatter={(value) => value.slice(0, 15)}
+                            fillOpacity={0.8}
                         />
                         <ChartTooltip
                             cursor={false}
