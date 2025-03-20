@@ -2,6 +2,7 @@
 
 # dependencies
 /admin-panel/node_modules
+/web-admin/node_modules
 /.pnp
 .pnp.js
 
